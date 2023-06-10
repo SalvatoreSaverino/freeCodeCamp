@@ -1,0 +1,231 @@
+/* Stili di base */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Roboto", "sans-serif";
+    font-size: 62.5%;
+  }
+  
+  /* Header */
+  #header {
+    background-color: #f5f5f5;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+#header-content { 
+  
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+  width: 85%;
+  padding: 1rem;
+  }
+  
+  #header-img {
+    width: 30vw;
+
+  }
+
+  #header-content .cta-button {
+    color: black;
+  }
+  
+  /* Navigazione */
+
+  .nav-links {
+    background-color: #f5f5f5;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    height: 100vh;
+    height: 0vh;
+    transition: 0.6s all;
+}
+
+
+.nav-links a {
+    display: block;
+    font-weight: 600;
+    font-size: 1.5rem;
+   color: black;
+    text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+.nav-links .active-link {
+    color: blueviolet;
+}
+
+/* menu - checkbox hack */
+
+#nav-bar input[type=checkbox]#toggle {
+  display: none;
+}
+
+.mobile-menu-toggle {
+ 
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.mobile-menu-toggle .bar {
+  height: 5px;
+  background: black;
+  border-radius: 5px;
+  margin: 2px 0px;
+  transform-origin: left;
+  transition: all 0.6s;
+}
+
+#toggle:checked ~ .mobile-menu-toggle .top {
+  transform: rotate(45deg);
+}
+
+#toggle:checked~.mobile-menu-toggle .middle {
+  opacity: 0;
+}
+
+#toggle:checked~.mobile-menu-toggle .bottom {
+  transform: rotate(-45deg);
+}
+
+#nav-bar #toggle:checked~ul {
+  height: 100vh; 
+}
+
+/* fine menu - checkbox hack */
+ 
+  
+
+/* Sezioni */
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+  }
+
+.section p {
+  font-size: .7rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+
+
+#form{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 2rem;
+}
+  
+/* Media Query */
+
+  /* Barra di navigazione mobile */
+  @media screen and (min-width: 768px) {
+    
+#header-content{
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#header-content .cta-button{
+  font-size: 1.4rem;
+}
+
+#header-title{
+  font-size: 2rem;
+}
+
+#header-img{
+max-width: 20vw;
+}
+    /* Cambio il menu */
+    #nav-bar ul {
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-end;
+      height: auto;
+      padding: 1rem;
+  }
+
+  #nav-bar a {
+      font-size: 1.8rem;
+  }
+
+  .mobile-menu-toggle {
+      display: none;
+  }
+
+  /* Section */
+
+  .section h2{
+  font-size: 2rem;
+}
+  .section p{
+    font-size: 1.4rem;
+  }
+
+  #video iframe{
+    height: 40vh;
+  }
+
+  #section2 ul{
+    font-size: 1.5rem;
+  }
+
+  #section3 a{
+font-size: 1.5rem;
+  }
+
+  .section img{
+    width: 60%;
+  }
+
+  /* Form */
+
+#form{
+  text-align: center;
+  background-color: #f5f5f5;
+  font-size: 2rem;
+  gap: 1rem;
+}
+
+ #form h2{
+    margin: 2rem ;
+  }
+
+#form input{
+ font-size: 1.6rem;
+ padding:1.5rem;
+}
+
+}

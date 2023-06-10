@@ -70,8 +70,10 @@ il programma lo tratterà come se fosse 5.*/
 Le virgolette non sono gli unici caratteri dei quali si può fare l'escaping all'interno di una stringa. 
 Ci sono due motivi per usare i caratteri di escaping:
 
-Per permetterti di utilizzare caratteri che potresti non essere altrimenti in grado di digitare, come ad esempio un ritorno a capo.
-Per permetterti di rappresentare più virgolette in una stringa senza JavaScript interpretare erroneamente ciò che intendi.
+Per permetterti di utilizzare caratteri che potresti non essere altrimenti in grado di digitare, 
+come ad esempio un ritorno a capo.
+Per permetterti di rappresentare più virgolette in una stringa senza JavaScript interpretare erroneamente 
+ciò che intendi.
 Lo abbiamo imparato nella sfida precedente.
 
 Codice	Output
@@ -102,7 +104,8 @@ const lastName = "Lovelace";
 const thirdLetterOfLastName = lastName[2];
 
 Al fine di ottenere l'ultima lettera di una stringa, è possibile sottrarre uno dalla lunghezza della stringa.
-Per esempio, se const firstName = "Ada", puoi ottenere il valore dell'ultima lettera della stringa usando firstName[firstName.length - 1].
+Per esempio, se const firstName = "Ada", 
+puoi ottenere il valore dell'ultima lettera della stringa usando firstName[firstName.length - 1].
 
 Esempio:
 const firstName = "Ada";
@@ -119,7 +122,8 @@ const lastLetterOfLastName =lastName[lastName.length -1];
 Memorizzare più valori in una variabile utilizzando gli array in JavaScript
 Con le variabili array di JavaScript, possiamo memorizzare diversi dati in un unico posto.
 
-La dichiarazione di un array inizia con una parentesi quadra di apertura, e termina con una parentesi quadra di chiusura, 
+La dichiarazione di un array inizia con una parentesi quadra di apertura, 
+e termina con una parentesi quadra di chiusura, 
 con gli elementi separati da virgole, in questo modo:
 
 const sandwich = ["peanut butter", "jelly", "bread"];
@@ -136,7 +140,8 @@ Possiamo accedere ai dati all'interno degli array utilizzando gli indici.
 
 Gli indici degli array sono scritti nella stessa notazione tra parentesi usata dalle stringhe, 
 tranne per il fatto che invece di specificare un carattere, specificano una voce nell'array. 
-Come le stringhe, gli array utilizzano l'indicizzazione zero-based, quindi il primo elemento in un array ha un indice di 0.
+Come le stringhe, gli array utilizzano l'indicizzazione zero-based, 
+quindi il primo elemento in un array ha un indice di 0.
 Esempio:
 const array = [50, 60, 70];
 console.log(array[0]);
@@ -180,9 +185,11 @@ Puoi chiamare o invocare questa funzione usando il suo nome seguito da parentesi
 functionName(); Ogni volta che la funzione viene chiamata stamperà il messaggio Hello World sulla dev console. 
 Tutto il codice tra le parentesi graffe verrà eseguito ogni volta che viene chiamata la funzione.
 
-I parametri sono variabili che agiscono come segnaposto per i valori che devono essere inseriti in una funzione quando viene chiamata.
+I parametri sono variabili che agiscono come segnaposto per i valori che devono essere inseriti 
+in una funzione quando viene chiamata.
  Quando una funzione viene definita, essa è tipicamente definita insieme a uno o più parametri. 
-I valori effettivi che vengono inseriti (o "passati") in una funzione quando viene chiamata sono conosciuti come argomenti.
+I valori effettivi che vengono inseriti (o "passati") in una funzione quando viene chiamata 
+sono conosciuti come argomenti.
 
 function functionWithArgs(num1,num2){
   console.log(num1+num2)
@@ -360,7 +367,7 @@ Esempi
 Esempio Esercizio
 // Setup
 function testStrictNotEqual(val) {
-  if (val!==17) { // Modifica questa riga
+  if (val!==17) { 
     return "Not Equal";
   }
   return "Equal";
@@ -686,7 +693,7 @@ function caseInSwitch(val) {
 caseInSwitch(1);
 
 
-Aggiungere un'opzione predefinita nelle dichiarazioni Switch
+Aggiungere un'opzione predefinita (Default) nelle dichiarazioni Switch
 
 In un'istruzione switch potresti non essere in grado di specificare tutti i possibili valori con le dichiarazioni case. 
 Puoi invece aggiungere una dichiarazione default che verrà eseguita se non vengono trovati case corrispondenti. 
@@ -898,7 +905,7 @@ const cat = {
   "tails": 1,
   "enemies": ["Water", "Dogs"]
 };
-In questo esempio, tutte le proprietà sono memorizzate come stringhe, come name, legse tails. 
+In questo esempio, tutte le proprietà sono memorizzate come stringhe, come name, legs e tails. 
 Per le proprietà puoi anche usare i numeri. Puoi anche omettere le virgolette per le proprietà di tipo stringa di una sola parola,
  come segue:
 
@@ -1003,6 +1010,7 @@ const myDog = "Hunter";
 const myBreed = dogs[myDog];
 console.log(myBreed);
 La stringa Doberman sarà visualizzata nella console.
+
 
 Un altro modo per utilizzare questo concetto è quando il nome della proprietà viene ottenuto dinamicamente 
 durante l'esecuzione del programma, come segue:
@@ -1604,18 +1612,18 @@ lookUpProfile("Akira", "likes");
 
 
 Spiegazione del codice
-Il forciclo viene eseguito, a partire dal primo oggetto nell'elenco dei contatti .
-Se il parametro firstName passato alla funzione corrisponde al valore della "firstName"chiave nel primo oggetto, l' ifistruzione passa.
-Quindi, utilizziamo .hasOwnProperty()il metodo (verifica se esiste una determinata proprietà e restituisce un booleano) con prop come argomento. Se è vero, viene restituito il valore di prop .
-Se la seconda ifistruzione ha esito negativo, No such propertyviene restituito.
-Se la prima ifistruzione non riesce, il forciclo continua all'oggetto successivo nell'elenco dei contatti .
-Se il parametro firstName non corrisponde all'oggetto contattifor finali, il ciclo esce e No such contactviene restituito.
+Il for viene eseguito, a partire dal primo oggetto nell'elenco dei contatti .
+Se il parametro firstName passato alla funzione corrisponde al valore della "firstName"chiave nel primo oggetto, l' if istruzione passa.
+Quindi, utilizziamo .hasOwnProperty() il metodo (verifica se esiste una determinata proprietà e restituisce un booleano) con prop come argomento. Se è vero, viene restituito il valore di prop .
+Se la seconda if istruzione ha esito negativo, No such property viene restituito.
+Se la prima if istruzione non riesce, il for continua all'oggetto successivo nell'elenco dei contatti .
+Se il parametro firstName non corrisponde all'oggetto contatti il for termina , il ciclo esce e No such contact viene restituito.
 Esempio Esegui
 
 lookUpProfile("Akira","likes");corre.
-"Akira"è abbinato alla "firstName"chiave nel primo oggetto, quindi l' ifistruzione restituisce true.
-"likes"si trova all'interno del primo oggetto, quindi la seconda ifistruzione restituisce true.
-"likes"Viene restituito il valore di - "Pizza", "Coding", "Brownie Points".
+"Akira"è abbinato alla "firstName"chiave nel primo oggetto, quindi l' if istruzione restituisce true.
+"likes"si trova all'interno del primo oggetto, quindi la seconda if istruzione restituisce true.
+"likes" Viene restituito il valore di - "Pizza", "Coding", "Brownie Points".
 
 
 Soluzione Alternativa
@@ -1634,7 +1642,7 @@ function lookUpProfile(name, prop) {
 }
 
 Utilizzando operatore IN 
-L' inoperatore restituisce truese la proprietà specificata si trova nell'oggetto specificato o nella sua catena di prototipi.
+L' in operatore restituisce true se la proprietà specificata si trova nell'oggetto specificato o nella sua catena di prototipi.
 
 
 
@@ -1714,7 +1722,7 @@ function randomRange(myMin, myMax) {
 
 Math.random()genera il nostro numero casuale compreso tra 0 e ≈ 0,9.
 Prima di moltiplicarlo, risolve la parte tra parentesi (myMax - myMin + 1)a causa dell'operatore di raggruppamento ( ).
-Il risultato di tale moltiplicazione è seguito dall'addizione myMine 
+Il risultato di tale moltiplicazione è seguito dall'addizione myMin,
 quindi "arrotondato" all'intero più grande minore o uguale ad esso (es: 9,9 risulterebbe in 9)
 
 Se i valori fossero myMin = 1, myMax= 10, 
@@ -1726,3 +1734,226 @@ a * b = 8.244326990411024
 c + myMin = 9.244326990411024
 Math.floor(9.244326990411024) = 9
 
+
+Usare la funzione parseInt
+La funzione parseInt() analizza una stringa e restituisce un numero intero. 
+
+Ecco un esempio:
+const a = parseInt("007");
+
+La funzione di cui sopra converte la stringa 007 nell'intero 7. 
+Se il primo carattere della stringa non può essere convertito in un numero, restituisce NaN.
+
+Esercizio 
+Usa parseInt() nella funzione convertToInteger in modo che 
+converta la serie str in un intero e la restituisca.
+
+function convertToInteger(str) {
+return parseInt(str)
+};
+
+convertToInteger("56");
+
+Usare la funzione ParseInt con una base
+La funzione parseInt() analizza una stringa e restituisce un numero intero. 
+Ci vuole un secondo argomento "radix", che specifica la base del numero presente nella stringa. 
+La base può essere un numero intero compreso tra 2 e 36.
+
+La chiamata alla funzione apparirà così:
+parseInt(string, radix);
+
+Ecco un esempio:
+
+const a = parseInt("11", 2);
+La variabile radix dice che 11 è nel sistema binario, o in base 2. 
+Questo esempio converte la stringa 11 in un intero 3.
+
+Usa parseInt() nella funzione convertToInteger in modo che 
+converta un numero binario in un intero e lo restituisca.
+
+function convertToInteger(str) {
+return parseInt(str,2)
+}
+convertToInteger("10011");
+
+Usare l'operatore condizionale (ternario)
+L'operatore condizionale, chiamato anche ternario, può essere utilizzato come un'espressione if-else tutta in una riga.
+
+La sintassi è a ? b : c, dove a è la condizione; b è il codice da eseguire quando la condizione 
+restituisce true, e c è il codice da eseguire quando la condizione restituisce false.
+
+La seguente funzione utilizza un'istruzione if/else per controllare una condizione:
+
+function findGreater(a, b) {
+  if(a > b) {
+    return "a is greater";
+  }
+  else {
+    return "b is greater or equal";
+  }
+}
+Questo può essere riscritto utilizzando l'operatore condizionale:
+
+function findGreater(a, b) {
+  return a > b ? "a is greater" : "b is greater or equal";
+}
+Utilizzare l'operatore condizionale nella funzione checkEqual per verificare 
+se due numeri sono uguali o meno. 
+La funzione dovrebbe restituire la stringa Equal o la stringa Not Equal.
+
+function checkEqual(a, b) {
+return a!==b ? "Not Equal" : "Equal"
+}
+
+checkEqual(1, 2);
+
+Usare operatori condizionali multipli (ternari)
+Nella sfida precedente, hai usato un singolo operatore condizionale. Puoi anche concatenarli insieme per verificare la presenza di più condizioni.
+
+La seguente funzione utilizza le istruzioni if, else ife else per verificare più condizioni:
+
+function findGreaterOrEqual(a, b) {
+  if (a === b) {
+    return "a and b are equal";
+  }
+  else if (a > b) {
+    return "a is greater";
+  }
+  else {
+    return "b is greater";
+  }
+}
+La funzione di cui sopra può essere riscritta utilizzando più operatori condizionali:
+
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" 
+    : (a > b) ? "a is greater" 
+    : "b is greater";
+}
+È ritenuta una buona pratica formattare più operatori condizionali in modo tale che ogni condizione 
+si trovi su una linea separata, come mostrato sopra. 
+Utilizzare più operatori condizionali senza indentazione corretta può rendere il codice difficile da leggere. 
+Ad esempio:
+
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" : (a > b) ? "a is greater" : "b is greater";
+}
+Nella funzione checkSign utilizza più operatori condizionali 
+- seguendo il formato raccomandato utilizzato in findGreaterOrEqual 
+- per verificare se un numero è positivo, negativo o zero. 
+La funzione dovrebbe restituire positive, negative o zero.
+
+function checkSign(num) {
+return num===0 ? "zero"
+: num<0 ? "negative"
+: "positive";
+}
+
+checkSign(10);
+
+
+Usare la ricorsione per creare un conto alla rovescia
+In una sfida precedente, hai imparato come usare la ricorsione per sostituire un ciclo for. Ora, diamo un'occhiata a una funzione più complessa che restituisce un array di interi consecutivi a partire da 1 in base al numero passato alla funzione.
+
+Come accennato nella sfida precedente, ci sarà un caso base. Il caso base dice alla funzione ricorsiva quando non ha più bisogno di chiamare sé stessa. Si tratta di un caso semplice in cui il valore da restituire è già noto. Ci sarà anche una chiamata ricorsiva che esegue la funzione originale con argomenti diversi. Se la funzione è scritta correttamente, alla fine sarà raggiunto il caso base.
+
+Per esempio, diciamo che si desideri scrivere una funzione ricorsiva che restituisca un array contenente i numeri da 1 a n. Questa funzione dovrà ricevere un argomento, n, che rappresenta il numero finale. Poi dovrà chiamare sé stessa con valori progressivamente più piccoli di n fino a quando non raggiungerà 1. È possibile scrivere la funzione come segue:
+
+function countup(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countup(n - 1);
+    countArray.push(n);
+    return countArray;
+  }
+}
+console.log(countup(5));
+Il valore [1, 2, 3, 4, 5] verrà visualizzato nella console.
+
+In un primo momento, questo sembra controintuitivo dal momento che il valore di n decresce, 
+ma i valori nell'array finale sono crescenti. 
+Questo accade perché l'inserimento (push) avviene per ultimo, 
+dopo che la chiamata ricorsiva ha restituito il suo valore. 
+Nel punto in cui n è inserito nell'array, 
+countup(n - 1) è già stato valutato e ha restituito [1, 2, ..., n - 1].
+
+Abbiamo definito una funzione chiamata countdown con un parametro (n). 
+La funzione dovrebbe usare la ricorsione per restituire un array 
+contenente gli interi da n a 1 in base al parametro n. 
+Se la funzione è chiamata con un numero inferiore a 1, 
+ - la funzione dovrebbe restituire un array vuoto. 
+ Ad esempio, chiamare questa funzione con n = 5 dovrebbe restituire l'array [5, 4, 3, 2, 1]. 
+La tua funzione deve usare la ricorsione richiamando sé stessa e non deve utilizzare cicli di alcun tipo
+
+function countdown(n){
+ if(n<1){
+  return [];
+ } else { 
+   const arr = countdown(n-1);
+   arr.unshift(n); // ivertiamo l'ordine di costruzione dell'array otteniamo ==> [n...3,2,1]
+   return arr;
+ }
+}
+
+Usare la ricorsione per creare un intervallo di numeri
+Proseguendo dalla sfida precedente, ti offriamo un'altra opportunità di creare una funzione ricorsiva 
+per risolvere un problema.
+Abbiamo definito una funzione chiamata rangeOfNumbers con due parametri. 
+La funzione dovrebbe restituire un array di interi che inizia con un numero 
+rappresentato dal parametro startNum e termina con un numero rappresentato dal parametro endNum. 
+Il numero iniziale sarà sempre minore o uguale al numero finale. 
+La tua funzione deve usare ricorsioni chiamando sé stessa e non usare cicli di alcun tipo. 
+Dovrebbe funzionare anche nei casi in cui sia startNum che endNum hanno lo stesso valore.
+
+****Soluzione 1
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum < startNum) {
+    return [];
+  } else {
+    const numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
+  }
+}
+
+****Soluzione 2
+
+function rangeOfNumbers(startNum, endNum) {
+  return endNum < startNum
+    ? []
+    : [...rangeOfNumbers(startNum, endNum - 1), endNum];
+}
+
+Viene controllato il caso base: endNum < startNum. Se questa condizione è vera, 
+significa che endNum è minore di startNum, quindi viene restituito un array vuoto [].
+
+Se il caso base non viene soddisfatto, la funzione chiama se stessa in modo ricorsivo 
+con i parametri startNum e endNum - 1. 
+Questa chiamata ricorsiva genera la sequenza di numeri da startNum a endNum - 1.
+
+Il risultato della chiamata ricorsiva viene espanso in un nuovo array utilizzando l'operatore di spread ..., 
+e l'attuale endNum viene aggiunto alla fine dell'array. 
+In questo modo viene creato un nuovo array che include tutti i numeri della chiamata ricorsiva più l'attuale endNum.
+
+Viene restituito il risultato finale, ovvero un array contenente la sequenza di numeri da startNum a endNum.
+
+Ecco un esempio per illustrare come funziona la funzione:
+console.log(rangeOfNumbers(1, 5));
+Output:
+[1, 2, 3, 4, 5]
+In questo esempio, la funzione parte con startNum = 1 e endNum = 5. 
+Poiché endNum non è minore di startNum, viene effettuata una chiamata ricorsiva 
+con startNum = 1 e endNum - 1 = 4. 
+Questo processo continua finché endNum diventa minore di startNum, innescando il caso base. 
+La funzione restituisce quindi l'array [1, 2, 3, 4, 5], che rappresenta la sequenza di numeri da 1 a 5.
+
+****Soluzione 3 
+
+function rangeOfNumbers(startNum, endNum) {
+  return endNum < startNum
+    ? []
+    : rangeOfNumbers(startNum, endNum - 1).concat(endNum);
+}
+
+*/

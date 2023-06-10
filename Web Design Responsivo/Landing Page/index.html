@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page del Prodotto</title>
+        <link rel="stylesheet" href="./src/css/style.css">
+    </head>
+    <body>
+        <header id="header">
+            <div id="header-content">
+                <h1 id="header-title">Benvenuti nella nostra landing page!</h1>
+                <img id="header-img" src="./src/img/ASUS_logo.svg" alt="Logo">
+                <a class="cta-button" href="#form">Scopri di più</a>
+            </div>
+            <nav id="nav-bar">
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="mobile-menu-toggle">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+                </label>
+                <ul class="nav-links">
+                    <li>
+                        <a class="nav-link" href="#">Descrizione</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Specifiche Tecniche</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Dove Comprare</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="section1" class="section">
+            <!-- Contenuto della sezione 1 -->
+            <h2>GRAZIE ALL'INCREDIBILE COMBINAZIONE DELLE SUE COMPONENTI</h2>
+            <img src="./src/img/h732.png" alt="immagine scheda video">
+            <p>La ROG Strix GeForce RTX® 4090 dà un significato completamente nuovo al
+                concetto di "seguire la corrente". All'interno e all'esterno, ogni elemento
+                della scheda offre alla mostruosa GPU lo spazio per respirare liberamente e
+                raggiungere le massime prestazioni. È arrivato il regno scatenato
+                dell'architettura NVIDIA Ada Lovelace.</p>
+            <img src="./src/img/h732 (1).png" alt="immagine scheda video">
+            <hr>
+            <h2>Auto-Extreme Technology</h2>
+            <p>Auto-Extreme è un processo di produzione automatizzato che stabilisce nuovi
+                    standard nel settore consentendo a tutte le saldature di essere completate in
+                    un'unica passaggio. Ciò riduce lo sforzo termico sui componenti ed evita l'uso
+                    di prodotti chimici di pulizia aggressivi, con un conseguente impatto ambientale
+                    inferiore, un minore consumo energetico di produzione e un prodotto più
+                    affidabile nel complesso.</p>
+            <img src="./src/img/h732 (3).png" alt="immagine scheda video">
+            <hr>
+            <h2>Sinfonia di luce</h2>
+            <p>Gli elementi di illuminazione ARGB compatibili con Aura sul coperchio e sul
+                perimetro destro della scheda offrono infinite possibilità di personalizzazione
+                con effetti cromatici o funzionali. Abbinate una vasta gamma di componenti di
+                sistema compatibili e coordinate il bagliore per creare una struttura che sia
+                unica per voi.</p>
+            <img src="./src/img/h732 (2).png" alt="immagine scheda video">
+            <hr>
+        </section>
+        <div id="video" class="section">
+            <iframe
+                src="https://www.youtube.com/embed/ki7JKna_FBA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen="allowfullscreen"></iframe>
+        </div>
+        <hr>
+        <section id="section2" class="section">
+            <!-- Contenuto della sezione 2 -->
+            <h2>Specifiche Tecniche</h2>
+            <ul>
+                <li>Tecnologie Supportate: DLSS, Ray Tracing, NVIDIA Reflex, GeForce Experience
+                    e tutte le applicazioni NVIDIA Studio</li>
+                <li>Core & Clock: Boost Clock 2640 MHz, dimensione della memoria 24GB, tipo di
+                    memoria GDDR6X, bus di memoria 384-bit, velocità di memoria 21 Gbps</li>
+                <li>Raffreddamento: dissipatore con design Axial-tech, doppi cuscinetti a sfera</li>
+                <li>Visuale: risoluzione massima 8K (7680 x 4320), supporta fino a 4 schermi e HDCP</li>
+                <li>I/O e connettività: PCIE 4.0, 2 x HDMI 2.1, 3 x DisplayPort 1.4a, DirectX 12
+                    Ultimate, OpenGL 4.6</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="section3" class="section">
+            <!-- Contenuto della sezione 3 -->
+            <h2>Dove Comprare</h2>
+            <a
+                href="https://estore.asus.com/it/rog/90yv0id2-m0na00-rog-strix-rtx4090-o24g-white.html"
+                target="_blank"
+                rel="noopener noreferrer">
+                ASUS</a>
+        </section>
+        <hr>
+        <form
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+            method="POST">
+            <h2>Iscriviti alla nostra newsletter,<br>
+                per restare aggiornato!</h2>
+            <label for="email">Indirizzo Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Inserisci la tua mail"
+                required="required">
+            <input type="submit" id="submit" value="Iscriviti">
+        </form>
+    </body>
+</html>
